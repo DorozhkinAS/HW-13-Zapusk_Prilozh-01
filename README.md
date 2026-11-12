@@ -21,9 +21,9 @@
 
 - Описание Multitool.
 
-![1](https://github.com/Ivan-Shkutov/kuber_1.3/blob/main/1.png)
+<img width="866" height="625" alt="image" src="https://github.com/user-attachments/assets/5121941d-3b24-4871-b7d4-ee436bb1ff96" />
 
-![2](https://github.com/Ivan-Shkutov/kuber_1.3/blob/main/2.png)
+<img width="686" height="206" alt="image" src="https://github.com/user-attachments/assets/c77ce8bf-77ee-49ff-aed0-5adb6f4adb48" />
 
 
 ### Задание 1. Создать Deployment и обеспечить доступ к репликам приложения из другого Pod
@@ -38,7 +38,8 @@
 
 - Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.
 
-![3](https://github.com/Ivan-Shkutov/kuber_1.3/blob/main/3.png)
+  <img width="1665" height="830" alt="image" src="https://github.com/user-attachments/assets/bcb259fe-7ea1-471b-a195-8353803ac664" />
+
 
  - - -    
     apiVersion: apps/v1 — Deployment относится к API группы apps/v1
@@ -75,7 +76,7 @@
 
 - Продемонстрировать состояние пода до и после запуска сервиса.
 
-![4](https://github.com/Ivan-Shkutov/kuber_1.3/blob/main/4.png)
+  <img width="1663" height="1235" alt="image" src="https://github.com/user-attachments/assets/11060594-5799-4129-af69-97f637fa59d9" />
 
 
 ### Факультативный вопрос: в какой DB хранятся манифесты в k8s?
