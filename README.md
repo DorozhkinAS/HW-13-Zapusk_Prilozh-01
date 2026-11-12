@@ -79,20 +79,3 @@
   <img width="1663" height="1235" alt="image" src="https://github.com/user-attachments/assets/11060594-5799-4129-af69-97f637fa59d9" />
 
 
-### Факультативный вопрос: в какой DB хранятся манифесты в k8s?
-
-В Kubernetes манифесты YAML напрямую не хранятся.
-
-      kubectl apply -f pod.yaml
-
-происходит следующее:
-
-- kubectl отправляет объект на API Server (через Kubernetes API)
-
-- API Server разбирает YAML и превращает его в объект Kubernetes (Pod, Deployment, Service и т.д.)
-
-- API Server сохраняет объект в etcd — это распределённое хранилище, которое является источником истины кластера
-
-- когда делаем kubectl get pods -o yaml, API Server получает данные из etcd и формирует YAML для работы
-
-
