@@ -272,11 +272,11 @@ Handling connection for 41180
   
 * Обращение к nginx
 
-<img width="1065" height="396" alt="image" src="https://github.com/user-attachments/assets/c98eea36-93a0-4b14-b45d-6be40ba039ae" />
+<img width="597" height="90" alt="image" src="https://github.com/user-attachments/assets/effebd91-bcfc-4610-982b-408ee417f94a" />
 
 * Обращение к multitool
 
-<img width="1916" height="837" alt="image" src="https://github.com/user-attachments/assets/48e494cf-8fb2-45d4-a093-9c4ddd90db6d" />
+<img width="1477" height="215" alt="image" src="https://github.com/user-attachments/assets/02580974-c163-4d6b-959a-4d80d3cc853b" />
 
 5. Создаем отдельный Pod с приложением multitool. Опишем Pod в yaml-файле pod-1.yaml:
 
