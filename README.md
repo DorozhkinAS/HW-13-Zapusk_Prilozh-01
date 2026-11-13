@@ -269,16 +269,14 @@ Forwarding from [::1]:41180 -> 1180
 Handling connection for 41180
 ```
 * Подтвердим результат скриншотами:
+  
 * Обращение к nginx
 
-  <img width="1065" height="396" alt="image" src="https://github.com/user-attachments/assets/c98eea36-93a0-4b14-b45d-6be40ba039ae" />
+<img width="1065" height="396" alt="image" src="https://github.com/user-attachments/assets/c98eea36-93a0-4b14-b45d-6be40ba039ae" />
 
 * Обращение к multitool
 
-  <img width="1916" height="837" alt="image" src="https://github.com/user-attachments/assets/48e494cf-8fb2-45d4-a093-9c4ddd90db6d" />
-
-![K8s_12.3.4](./images/K8s_12.3.4.png)  
-
+<img width="1916" height="837" alt="image" src="https://github.com/user-attachments/assets/48e494cf-8fb2-45d4-a093-9c4ddd90db6d" />
 
 5. Создаем отдельный Pod с приложением multitool. Опишем Pod в yaml-файле pod-1.yaml:
 
@@ -326,10 +324,10 @@ Server: nginx/1.25.5
 sysadmin@sysadmin:~$ kubectl exec pod-1 -- curl --silent -i 10.1.12.158:1180 | grep Server
 Server: nginx/1.24.0
 ```
-* Видим, что pod-1 имеет доступ к открытым портам других подов. Подтвердим результат скриншотом:  
- 
-![K8s_12.3.5](./images/K8s_12.3.5.png  
+* Видим, что pod-1 имеет доступ к открытым портам других подов. Подтвердим результат скриншотом:
 
+<img width="936" height="237" alt="image" src="https://github.com/user-attachments/assets/8331c1b8-347e-4e07-95bf-5c800e11d0eb" />
+ 
 6. Удалим развернутые ресурсы (Deployment, Service и Pod):
 ```
 sysadmin@sysadmin:~$ kubectl delete -f deployment-3.yaml -f service-1.yaml -f pod-1.yaml
