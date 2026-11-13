@@ -481,12 +481,13 @@ sysadmin@sysadmin:~$ kubectl logs --tail=10 --all-containers=true --prefix=true 
 * Pod `deployment-4-7cbfc96f75-dtc75` c контейнером `nginx` успешно запустился.
 * Подтвердим результат скриншотами:
 
-* Состояние Пода до запуска сервиса  
-![K8s_12.3.6](./images/K8s_12.3.6.png)  
+* Состояние Пода до запуска сервиса
 
-* Состояние Пода после запуска сервиса  
-![K8s_12.3.7](./images/K8s_12.3.7.png)  
+<img width="677" height="153" alt="image" src="https://github.com/user-attachments/assets/e54fce61-6b00-428d-bb57-c7d659fb2ab3" />
 
+* Состояние Пода после запуска сервиса
+
+<img width="690" height="142" alt="image" src="https://github.com/user-attachments/assets/bd66596f-abda-4b9e-8dd5-d600f02dafb5" />
 
 5. Удалим развернутые ресурсы (Deployment и Service):
 ```
