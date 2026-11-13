@@ -96,7 +96,7 @@ sysadmin@sysadmin:~$ kubectl logs --tail=10 --all-containers=true --prefix=true 
 sysadmin@sysadmin:~$ kubectl delete -f deployment-1.yaml
 deployment.apps "deployment-1" deleted
 ```
-* Опишем новый yaml-файл [deployment-2.yaml](./configs/deployment-2.yaml) с переменными окружения для контейнера multitool:
+* Опишем новый yaml-файл deployment-2.yaml с переменными окружения для контейнера multitool:
 ```
 ---
 apiVersion: apps/v1
@@ -163,7 +163,7 @@ sysadmin@sysadmin:~$ kubectl logs --tail=10 --all-containers=true --prefix=true 
 [pod/deployment-2-5b998cb5b5-p6k5t/multitool] Replacing default HTTP port (80) with the value specified by the user - (HTTP_PORT: 1180).
 [pod/deployment-2-5b998cb5b5-p6k5t/multitool] Replacing default HTTPS port (443) with the value specified by the user - (HTTPS_PORT: 11443).
 ```
-2. После запуска увеличим количество реплик работающего приложения до 2 (в yaml-файле deployment-3.yaml
+2. После запуска увеличим количество реплик работающего приложения до 2 в yaml-файле deployment-3.yaml
    с теми же метками `app: deployment-2`:
 ```
 ---
