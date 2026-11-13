@@ -214,12 +214,13 @@ NAME           READY   UP-TO-DATE   AVAILABLE   AGE
 deployment-2   2/2     2            2           4m21s
 ```
 * Подтвердим результат скриншотами:
-* До масштабирования  
-![K8s_12.3.1](./images/K8s_12.3.1.PNG.png)
+* До масштабирования
 
-* После масштабирования  
-![K8s_12.3.2](./images/K8s_12.3.2.png)  
-  
+ <img width="680" height="143" alt="image" src="https://github.com/user-attachments/assets/cef2988e-ffd2-4017-9eea-bacc8d9a7d2b" />
+ 
+* После масштабирования
+
+  <img width="686" height="171" alt="image" src="https://github.com/user-attachments/assets/008fa5b0-d639-4a8a-a6f7-36412050572d" />
 
 4. Создаем Service, который обеспечит доступ до реплик приложений из п.1.
    Опишем сервис в yaml-файле service-1.yaml:
@@ -268,10 +269,14 @@ Forwarding from [::1]:41180 -> 1180
 Handling connection for 41180
 ```
 * Подтвердим результат скриншотами:
-* Обращение к nginx  
-![K8s_12.3.3](./images/K8s_12.3.3.png)  
-  
-* Обращение к multitool  
+* Обращение к nginx
+
+  <img width="1065" height="396" alt="image" src="https://github.com/user-attachments/assets/c98eea36-93a0-4b14-b45d-6be40ba039ae" />
+
+* Обращение к multitool
+
+  <img width="1916" height="837" alt="image" src="https://github.com/user-attachments/assets/48e494cf-8fb2-45d4-a093-9c4ddd90db6d" />
+
 ![K8s_12.3.4](./images/K8s_12.3.4.png)  
 
 
